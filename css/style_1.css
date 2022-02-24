@@ -268,7 +268,7 @@ li:hover{
 }
 
 #subcapa-2{
-    margin-top: 11%;
+    margin-top: 9%;
     margin-left: 12%;
     width: 68%;
     letter-spacing: 1px;
@@ -277,11 +277,12 @@ li:hover{
 }
 
 #subcapa-2 h6{
-    font-size:1.3vw ;
+    font-size:1.5vw ;
     width: 80%;
     border-radius: 7px;
-    color:black ;
-    font-family: R01;
+    color:#616161 ;
+    font-family: sans-serif;
+    font-weight: 100;
 }
 
 #subcapa-2 div h2{
@@ -355,6 +356,7 @@ li:hover{
     font-family: R05;
     font-size: 1.5vw;
     margin-top: 3%;
+    text-align: center;
 }
 
 .card-project h6{
@@ -362,6 +364,9 @@ li:hover{
     font-family: R01;
     font-size: 1.4vw;
     margin-top: 3%;
+    color: #666666;
+    font-family: sans-serif;
+    font-weight: 100;
 }
 
 #sub-1{
@@ -374,9 +379,12 @@ li:hover{
     letter-spacing: 0px;
 }
 #sub-1 h5{
-    font-family: Rlw;
+    font-family: sans-serif;
+    font-weight: 100;
     font-size:1.7vw ;
     color: white;
+    width: 40%;
+    
 }
 
 #sub-2{
@@ -433,12 +441,18 @@ li:hover{
     }
     #sub-1 h5{
         font-size: 6vw;
-        font-family: RLW;
+        font-family: R03;
+        width: 100%;
+        color: #666666;
+        font-family: sans-serif;
+        font-weight: 100;
     }
 
     .card-project h5{
         font-size: 6vw;
         text-align: center;
+
+
     }
 
     .card-project h6{
@@ -489,14 +503,16 @@ li:hover{
 }
 
 #skills-3 h3{
-    color: black;
+    color: #f44826;
     font-family: R03;
     font-size: 1.7vw;
+    font-weight: 800;
 }
 
 #skills-3 h5{
-    color: black;
-    font-family: Rlw;
+    color: rgb(48, 48, 48);
+    font-family: sans-serif;
+    font-weight: 100;
     font-size: 1.7vw;
 }
 
