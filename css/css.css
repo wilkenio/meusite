@@ -302,6 +302,7 @@ nav ul a{
 .card img{
     width: 99%;
     border-left: 2px solid #F9B137;
+    border-radius: 5px;
 }
 
 .card #visualizar{
