@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body id="boy">
@@ -39,7 +42,9 @@
 
     <section id="capa">
         <div id="subcapa">
-            <div id="capa-1">
+            <div id="capa-1"data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine">
                 <h4>Olá, eu sou </h4>
                 <h1>Wilkenio</h1>
                 <h3>Desenvolvedor <span style="color: #FCA019;">Full Stack</span></h3><br><br>
@@ -50,9 +55,10 @@
         </div>
     </section>
     
-    <section id="sobre-geral">
+    <section id="sobre-geral" data-aos="fade-up"
+    data-aos-duration="3000">
         <div id="sobre-img"></div>
-        <div id="sobre">
+        <div id="sobre" >
             <h1>SOBRE MIN</h1>
             <h5>Olá, eu me chamo Wilkenio, sou um entusiasta pelo universo da tecnologia e suas vertentes. Estou sempre em busca de novos desafios nesse âmbito que eu tanto amo. Sou um programador ousado, com conhecimentos em JS e PHP além de outras linguagens. Concluí alguns cursos online, e outros estão em andamento, sempre procurando estar atualizando meus conhecimentos.</h5>
         </div>
@@ -62,14 +68,14 @@
         <h1>PORTIFÓLIO</h1>
         <div id="card-portifolio">
             <div class="card">
-                <img src="img/nlhost.png" alt="">
+                <img src="img/nlhost.png" alt=""data-aos="flip-left" data-aos-duration="3000" data-aos-delay="200">
                 <h3>Mini E-commerce</h3><h5>Sistema desenvolvido com a ideia de criar um sistema de carrinho simples, com armazenamento máximo de um item,  ultilizando banco de dados apenas para cadastro e login.</h5> 
                 <br>
                 <a target="_blank" href="https://nlhost7.000webhostapp.com/index.php"><button id="visualizar">VIZUALISAR</button></a>
                 <a target="_blank" href="https://github.com/wilkenio/nlhost"><button id="repositorio">REPOSITÓRIO</button></a>
             </div>
             <div class="card">
-                <img src="img/capa.png" alt="">
+                <img src="img/capa.png" alt=""data-aos="flip-right" data-aos-duration="2000">
                 <h3>Em andamento...</h3><h5>.</h5> 
                 <br>
                 <a href=""><button id="visualizar">VIZUALISAR</button></a>

@@ -1,4 +1,8 @@
 
+
+AOS.init();
+
+
 function menuabrir(x) {
     var menumobile = document.getElementById("menu-mobile")
     var ham = document.getElementById("x")
@@ -6,6 +10,7 @@ function menuabrir(x) {
     x.style.display = "none"
     ham.style.display = "block"
     menumobile.style.left = "0%"
+    document.getElementById("nav").style.background = "#1B1B1B"
 }
 
 function menufechar(x) {
@@ -15,6 +20,7 @@ function menufechar(x) {
     x.style.display = "none"
     ham.style.display = "block"
     menumobile.style.left = "-100%"
+    document.getElementById("nav").style.background="#1b1b1b00"
 }
 
 //função para mudar a cor do menu de acordo com o scroll
