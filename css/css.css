@@ -38,7 +38,36 @@ nav{
     width: 100%;
     z-index: 9;
 }
+#preloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color:  #1B1B1B;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#preloader img{
+    width: 8%;
+    border: 2px solid #4ED470; /* Light grey */
+    border-top: 2px solid #FCA019; /* Blue */
+    padding: 1%;
+    border-radius: 100px;
+    animation: spin 2s linear infinite;
+}
 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+@media (max-width: 1050px){
+    #preloader img{
+        width: 30%;
+    }
+}
 nav ul{
     display: flex;
     flex-direction: row;
@@ -339,13 +368,13 @@ nav ul a{
 .card img{
     width: 99%;
     border-radius: 3px;
-    -webkit-transition: -webkit-transform .0.5s ease;
+    -webkit-transition: -webkit-transform .0.5s ease; 
     opacity: 0.3;
     border-bottom: 3px solid #F9B137;
 }
 .card img:hover{
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    transform: scale(1.1); 
     opacity: 1;
 }
 

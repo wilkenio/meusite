@@ -1,8 +1,15 @@
+ // PRELOADER
+ setInterval(function () {
 
+        var preloader = document.querySelector('#preloader');
+        preloader.style.display="none"
 
+ }, 1500);
+
+ //AOS
 AOS.init();
 
-
+//FUNÇÃO DO MENU NO MOBILE
 function menuabrir(x) {
     var menumobile = document.getElementById("menu-mobile")
     var ham = document.getElementById("x")
