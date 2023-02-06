@@ -18,7 +18,6 @@
     src: url("../fonts/opensans/static/OpenSans/OpenSans-Bold.ttf");
 }
 
-
 @font-face {
     font-family: R03;
     src: url("../fonts/roboto/Roboto-03.ttf"); 
@@ -47,6 +46,7 @@ nav ul{
     align-items:center;
     font-family: R05;
     padding: 3%;
+    transition: 2s ease;
 }
 
 nav ul li:hover{
@@ -111,6 +111,7 @@ nav ul a{
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
+    border-radius: 0px 0px 300px 50px;
 }
 #subcapa{
     background-size: cover;
@@ -191,6 +192,7 @@ nav ul a{
     #capa{
         background-image: url('../img/capa-mobile.png');
         background-position-x: 65%;
+        border-radius: 0px 0px 0px 0px;
     }
     #subcapa{
         flex-direction: column;
@@ -237,21 +239,23 @@ nav ul a{
 #sobre-geral{
     display: flex;
     flex-direction: row;
-    margin-top: 7vh;
+    margin-top: 25vh;
+    margin-bottom: 10vh;
     margin-left: 5%;
 }
-
 #sobre-img{
-    background-image: url("../img/wilparaquedas.png");
-    background-repeat: no-repeat;
-    padding: 20vh;
-    background-size: 46vh;
-    background-position-x: center;
-    background-position-y: center;
+    width: 30%;
+}
+
+#sobre-img img{
+    margin-top: 18vh; 
+    width: 100%;
+    margin: 5%;
 }
 
 #sobre{
-    margin: 10%;
+    width: 70%;
+    margin: 3%;
     padding-left: 2%;
     border-left: #FCA019 solid 4px;
 }
@@ -266,7 +270,7 @@ nav ul a{
     margin-bottom: 8vh;
     margin-top: 10%;
     font-size: 3vh;
-    font-family:sans-serif;
+    font-family:R01;
     font-weight: 100;
     color: white;
 }
@@ -275,18 +279,17 @@ nav ul a{
         flex-direction: column;
         margin-left: 0;
         margin-top: 3%;
-        padding-bottom: 10vh;
     }
     #sobre{
+        width: 80%;
         padding-left: 5%;
         border-left:#FCA019 solid 5px;
         margin: 5%;
-        margin-top: 20vh;
+        margin-top: 15vh;
     }
     #sobre-img{
-        padding: 40%;
-        margin: 10%;
-        margin-top: 20vh;
+        width: 90%;
+        margin-top:10vh ;
     }
     #sobre h1{
         font-size: 4vh;
@@ -308,7 +311,6 @@ nav ul a{
     grid-template-rows: auto ;
     grid-template-columns: auto auto;
     justify-items:center;
-    gap: 1%;
     padding-top: 10vh;
     padding-bottom: 10vh;
 }
@@ -316,6 +318,10 @@ nav ul a{
 .card{
     width: 50%;
     overflow: hidden;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
 }
 .card h3{
     color: #7C7D7D;
@@ -332,22 +338,22 @@ nav ul a{
 }
 .card img{
     width: 99%;
-    border-left: 2px solid #F9B137;
     border-radius: 3px;
     -webkit-transition: -webkit-transform .0.5s ease;
-    transition: transform .1s ease;
+    opacity: 0.3;
+    border-bottom: 3px solid #F9B137;
 }
 .card img:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    opacity: 1;
 }
 
 .card #visualizar{
     outline: none;
-    padding: 1vh;
-    padding-left: 3vh;
-    padding-right: 3vh;
-    font-size: 2.2vh;
+    width: 98%;
+    padding: 2%;
+    font-size: 1.1em;
     margin-right: 1%;
     color: white;
     border-radius: 20px;
@@ -356,6 +362,7 @@ nav ul a{
     border: 2px solid #FCA019;
     transition: 1s ease;
     cursor: pointer;
+    margin-bottom: 2%;
 }
 
 .card #visualizar:hover{
@@ -363,10 +370,9 @@ nav ul a{
 }
 .card #repositorio{
     outline: none;
-    padding: 1vh;
-    padding-left: 3vh;
-    padding-right: 3vh;
-    font-size: 2.2vh;
+    width: 98%;
+    padding: 2%;
+    font-size: 1.1em;
     margin-right: 1%;
     color: white;
     border-radius: 20px;
@@ -375,6 +381,7 @@ nav ul a{
     border: 2px solid #4ED470;
     transition: 1s ease;
     cursor: pointer;
+    margin-top: 1%;
 }
 
 .card #repositorio:hover{

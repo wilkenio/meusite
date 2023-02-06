@@ -27,13 +27,27 @@ function menufechar(x) {
 let doc = document.documentElement
 window.addEventListener('scroll', function () {
     let value = parseInt(100 * doc.scrollTop / (doc.scrollHeight - doc.clientHeight))
-    // console.log(value)
     if (value > 7) {
         document.getElementById("nav").style.background = "#1B1B1B"
-        document.getElementById("nav").style.border = "rgba(255, 255, 255, 0.089) 1px solid"
+       
+
+        //só executo o efeito do "menu pequeno" em um dispositivo maior
+       
+            if (window.screen.availWidth > 1050) {
+                document.getElementById("nav").style.boxShadow="rgba(10, 197, 94, 0.137) 0px 25px 20px -20px";
+                document.getElementById("menu-mobile").style.padding = "1%"
+            }
+
+       
     } else {
-        document.getElementById("nav").style.border = "none"
+        document.getElementById("nav").style.boxShadow="rgba(10, 197, 94, 0) 0px 25px 20px -20px";
         document.getElementById("nav").style.background="#1b1b1b00"
+       
+
+     
+            if (window.screen.availWidth > 1050) {
+                document.getElementById("menu-mobile").style.padding = "3%"
+            }
     }
 })
 
