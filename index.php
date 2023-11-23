@@ -12,22 +12,20 @@
      <title>Home</title>
 </head>
 <body>
-    <nav id="menu-todo" >
+    <nav>
             <i id="ham" onclick="menuabrir(this)" class="fa-solid fa-bars"></i>
              <i id="x" onclick="menufechar(this)" class="fa-solid fa-xmark"></i> 
         <ul id="menu-mobile">
-            <img src="img/logo.png" alt="">
-            <a href=""><li class="itens-menu"><img src="img/home.png" alt=""><label class="nome-menu">Dashboard</label> </li></a>
-            <a href=""><li class="itens-menu"><img src="img/dinheiro.png" alt=""> <label class="nome-menu">Dashboard</label> </li></a>
-            <a href=""><li class="itens-menu"><img src="img/conta.png" alt=""> <label class="nome-menu">Dashboard</label> </li></a>
-            <a href=""><li class="itens-menu"><img src="img/conta.png" alt=""> <label class="nome-menu">Dashboard</label> </li></a>
-            <a href=""><li class="itens-menu"><img src="img/out.png" alt=""> <label class="nome-menu">Dashboard</label> </li></a>
+            <a href=""><li class="itens-menu"><img src="img/home.png" alt=""> Home</li></a>
+            <a href=""><li class="itens-menu"><img src="img/dinheiro.png" alt=""> Adicionar Saldo</li></a>
+            <a href=""><li class="itens-menu"><img src="img/conta.png" alt=""> Conta</li></a>
+            <a href=""><li class="itens-menu"><img src="img/out.png" alt=""> Sair</li></a>
         </ul>
     </nav>
 
      <section id="principal">
         <div id="container">
-            <a href="paineis/cpf.html"> <div class="consultas"><img src="img/home.png" alt=""><h5>CPF</h5><h6><span class="on"></span>Online</h6></div></a>
+            <a href=""> <div class="consultas"><img src="img/home.png" alt=""><h5>CPF</h5><h6><span class="on"></span>Online</h6></div></a>
             <a href=""> <div class="consultas"><img src="img/home.png" alt=""><h5>Cpf</h5><h6><span class="off"></span>Off</h6></div></a>
             <a href=""> <div class="consultas"><img src="img/home.png" alt=""><h5>Cpf</h5><h6><span class="on"></span> Online</h6></div></a>
             <a href=""> <div class="consultas"><img src="img/home.png" alt=""><h5>Cpf</h5><h6><span class="on"></span>Online</h6></div></a>
