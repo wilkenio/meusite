@@ -1,12 +1,12 @@
- // PRELOADER
- setInterval(function () {
+// PRELOADER
+setInterval(function () {
 
-        var preloader = document.querySelector('#preloader');
-        preloader.style.display="none"
+    var preloader = document.querySelector('#preloader');
+    preloader.style.display = "none"
 
- }, 1500);
+}, 1500);
 
- //AOS
+//AOS
 AOS.init();
 
 //FUNÇÃO DO MENU NO MOBILE
@@ -27,7 +27,7 @@ function menufechar(x) {
     x.style.display = "none"
     ham.style.display = "block"
     menumobile.style.left = "-100%"
-    document.getElementById("nav").style.background="#1b1b1b00"
+    document.getElementById("nav").style.background = "#1b1b1b00"
 }
 
 //função para mudar a cor do menu de acordo com o scroll
@@ -36,25 +36,26 @@ window.addEventListener('scroll', function () {
     let value = parseInt(100 * doc.scrollTop / (doc.scrollHeight - doc.clientHeight))
     if (value > 7) {
         document.getElementById("nav").style.background = "#1B1B1B"
-       
+
 
         //só executo o efeito do "menu pequeno" em um dispositivo maior
-       
-            if (window.screen.availWidth > 1050) {
-                document.getElementById("nav").style.boxShadow="rgba(10, 197, 94, 0.137) 0px 25px 20px -20px";
-                document.getElementById("menu-mobile").style.padding = "1%"
-            }
 
-       
+        if (window.screen.availWidth > 1050) {
+            document.getElementById("nav").style.boxShadow = "rgba(10, 197, 94, 0.137) 0px 25px 20px -20px";
+            document.getElementById("menu-mobile").style.padding = "1%"
+        }
+
+
     } else {
-        document.getElementById("nav").style.boxShadow="rgba(10, 197, 94, 0) 0px 25px 20px -20px";
-        document.getElementById("nav").style.background="#1b1b1b00"
-       
-
-     
-            if (window.screen.availWidth > 1050) {
-                document.getElementById("menu-mobile").style.padding = "3%"
-            }
+        document.getElementById("nav").style.boxShadow = "rgba(10, 197, 94, 0) 0px 25px 20px -20px";
+        //
+        if (window.screen.availWidth > 1050) {
+            document.getElementById("nav").style.background = "#1b1b1b00"
+        }
+ //só executo o efeito do "menu transparente" em um dispositivo maior
+        if (window.screen.availWidth > 1050) {
+            document.getElementById("menu-mobile").style.padding = "3%"
+        }
     }
 })
 
