@@ -135,7 +135,7 @@ nav ul a{
 /*CAPA*/
 #capa{
     background-color: #1b1b1b;
-    background-image: url('../img/capa-mobile.png');
+    background-image: url('../img/capaNova.gif');
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -167,17 +167,22 @@ nav ul a{
 }
 #capa-1 h3{
     font-size: 6vh;
-    font-family: NU1;
-    margin-top: -2%;
+    font-family: R01;
+    margin-top: -3%;
 }
 
 #capa-1 h4{
     font-size: 4vh;
-    font-family: NU1;
-    line-height: 1%;
+    font-family: R01;
+    margin-bottom: -4%;
 }
 
-
+.card img{
+    border-radius: 10px !important;
+}
+.card a{
+    font-family: R01 !important;
+}
 
 #capa-2 {
     width: 50%;
@@ -218,7 +223,7 @@ nav ul a{
 
 @media (max-width: 1050px){
     #capa{
-        background-image: url('../img/capa-mobile.png');
+        background-image: url('../img/capaNova.gif');
         background-position-x: 65%;
         border-radius: 0px 0px 0px 0px;
     }
